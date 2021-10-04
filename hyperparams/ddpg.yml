@@ -121,3 +121,8 @@ InvertedDoublePendulumBulletEnv-v0:
 InvertedPendulumSwingupBulletEnv-v0:
   <<: *pybullet-defaults
   n_timesteps: !!float 3e5
+
+TradeEnv-v0:
+  normalize: True
+  n_timesteps: 15000
+  policy: 'MlpPolicy'
